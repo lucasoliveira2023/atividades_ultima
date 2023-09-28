@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <!-- Inclua os links para o Bootstrap CSS e JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Menu de Categorias -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Minha Loja</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categoria 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categoria 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categoria 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Produtos em Destaque -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_produto1.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 1</h5>
+                        <p class="card-text">Descrição do Produto 1.</p>
+                        <a href="#" class="btn btn-primary add-to-cart" title="Nome do Produto 1">Adicionar no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_produto2.jpg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        <a href="#" class="btn btn-primary add-to-cart" title="Nome do Produto 2">Adicionar no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_produto3.jpg" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 3</h5>
+                        <p class="card-text">Descrição do Produto 3.</p>
+                        <a href="#" class="btn btn-primary add-to-cart" title="Nome do Produto 3">Adicionar no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_produto4.jpg" class="card-img-top" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 4</h5>
+                        <p class="card-text">Descrição do Produto 4.</p>
+                        <a href="#" class="btn btn-primary add-to-cart" title="Nome do Produto 4">Adicionar no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2023 Minha Loja Virtual</p>
+    </footer>
+
+    <!-- Inclua os links para o Bootstrap JavaScript e o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para o botão "Adicionar no Carrinho" -->
+    <script>
+        $(".add-to-cart").click(function() {
+            alert("Produto adicionado ao carrinho: " + $(this).attr("title"));
+        });
+    </script>
+</body>
+</html>
